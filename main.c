@@ -32,5 +32,17 @@ int main() {
     scanf("%d", &snd_number);
     snd_nb_check();
 
+    if (operator == 43) {
+        printf("addition\n");
+    } else if (operator == 45) {
+        printf("soustraction\n");
+    } else if (operator == 42) {
+        printf("multiplication\n");
+    } else if (operator == 47) {
+        printf("division\n");
+    } else if (operator == 37) {
+        printf("modulo\n");
+    }
+
     exit(0);
 }
