@@ -3,6 +3,7 @@
 
 int fst_number;
 int snd_number;
+double result;  // On défini resultat
 char operator;
 
 void snd_nb_check(void) {
@@ -22,7 +23,7 @@ void snd_op_check(void) {
 }
 
 int main() {
-    printf("Choisissez une operation:\n     +  -  *  /  %%\n >> Symbole: ");
+    printf("Bonjour!\nChoisissez une operation:\n     +  -  *  /  %%\n >> Symbole: ");
     scanf("%c", &operator);
     snd_op_check();
 
@@ -33,15 +34,15 @@ int main() {
     snd_nb_check();
 
     if (operator == 43) {
-        printf("addition\n");
+        result = fst_number+snd_number;
     } else if (operator == 45) {
-        printf("soustraction\n");
+        result = fst_number-snd_number;
     } else if (operator == 42) {
-        printf("multiplication\n");
+        result = fst_number*snd_number;
     } else if (operator == 47) {
-        printf("division\n");
+        result = fst_number/snd_number;
     } else if (operator == 37) {
-        printf("modulo\n");
+        result = fst_number%snd_number;
     }
 
     exit(0);
